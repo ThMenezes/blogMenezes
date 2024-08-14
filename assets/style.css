@@ -1,0 +1,144 @@
+
+/* aqui é o começo */
+:root {
+    --cor-fundo: #000000;
+    --cor-texto: #ffffff;
+    --cor-box:#f8e6e6;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(./img/mar.jpg);
+    background-size: cover;    
+}
+
+header {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    padding: 1px;
+    text-align: center;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0 1rem;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: var(--cor-texto);
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: rgb(161, 198, 199);
+    box-shadow: 0 0 10px;
+}
+
+.card {
+    position: relative;
+    left: 300px;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    display: inline-block;
+    overflow: hidden;
+    box-shadow: 0 4px 8px;
+    transition: transform 01s ease; 
+    margin-left: 5px;
+    margin-top: 50px;
+    margin-bottom: 50px; 
+  
+}
+
+.card :hover {
+    transform: scale(1.05);
+}
+
+.card-text {
+    position: absolute;
+    width: 100%;
+    background-color: var(--cor-box);
+    color: var(--cor-fundo);
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    transform: translateY(200%);
+    transition: transform 0.0s ease;
+    bottom: 0;
+}
+
+.card:hover .card-text {
+    transform: translateY(0);
+}
+
+footer {
+    background-color: var(--cor-fundo);
+    color: var(--cor-box);
+    text-align: center;
+    padding: 19px;
+    width: 100%;
+    bottom: 0;
+}
+
+
+.form-container {
+    background: var(--cor-texto);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow:  0 0 10px;
+    max-width: 500px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.form-container h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: center;    
+}
+
+
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.form-container input,
+.form-container textarea {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #3ab1bc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-container button {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    border: none;
+    padding: 10px  20px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100px;
+    display: block;
+    margin-top: 10px; 
+    position: relative;
+    left: 200px;
+}
+
+.form-container button:hover {
+    background-color: #3ab1bc;
+}
+
